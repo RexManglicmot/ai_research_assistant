@@ -16,18 +16,68 @@ This project is meant to be a **production-style code** Retrieval-Augmented Gene
 
 This project will focus on the 4 generation metrics proposed by[Langchain](https://docs.smith.langchain.com/evaluation/tutorials/rag) and using LLM as a Judge concept that assess and score outputs like answers and summaries against specific guidelines. It acts as an automated evaluator that would otherwise require human review. The gold standard is to have a human evaluator score as well, and compare and contrast the scores of the Judge and Human, but that is outside this project scope and could be a potential follow up project.
 
-Metrics:
+1. **Correctness** – Accuracy vs. a gold/reference answer. *(Requires reference)*
+2. **Relevance** – How well the answer addresses the question.
+3. **Groundedness** – Whether all claims are supported by retrieved context (no hallucinations).
+4. **Retrieval Relevance** – How relevant retrieved chunks are to the question.
 
-1
+**Scoring Rubric:**
+
+| Score | Meaning |
+|-------|---------|
+| **5** | Perfect – fully correct/relevant/grounded |
+| **4** | Good – minor issues only |
+| **3** | Fair – noticeable gaps or noise |
+| **2** | Poor – significant errors or irrelevance |
+| **1** | Very poor – mostly wrong/off-topic |
+| **0** | Invalid – empty, refusal, or broken output |
+
+**Overall Score Calculation:**
+
+\[
+\text{Overall} = 0.35 \cdot \text{Correctness} + 0.25 \cdot \text{Groundedness} + 0.20 \cdot \text{Relevance} + 0.20 \cdot \text{Retrieval Relevance}
+\]
+
+**Passing Targets:**
+- Correctness ≥ **4.0**
+- Groundedness ≥ **4.5**
+- Relevance ≥ **4.0**
+- Retrieval Relevance ≥ **4.0**
 
 ## Why This Project Matters
 
+Help students get relevant info and be more efficient with their time.
 
 ## Tech Stack
 
-
+Python · sentence-transformers · FAISS · transformers · Mistral-7B-Instruct (Hugging Face) · cosine similarity · PyMuPDF · Tesseract OCR · Streamlit · pytest · logging · GitHub Actions · Docker
 ## Project Architecture
 
+`
+## 📌 Project Flow
+
+User Query
+│
+├── ingestion.py → Load PDFs (optional OCR) → extract text
+│
+├── utils.py → chunk text + metadata (source, page)
+│
+├── embeddings.py → create embeddings → build/load FAISS index
+│
+├── agent.py → retrieve top-K chunks via cosine similarity
+│
+├── agent.py → send query + context to HF LLM (Mistral-7B-Instruct)
+│
+├── logger_config.py → log query, retrieved docs, and output
+│
+├── Return → Answer + citations
+│
+└── evaluation/ → LLM-as-judge scores:
+       • Correctness
+       • Relevance
+       • Groundedness
+       • Retrieval Relevance
+`
 
 ## Setup
 TBD
