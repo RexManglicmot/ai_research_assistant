@@ -1,6 +1,7 @@
 .env # this hols API KEY!
-venv_ai_research_assistant
- __pycache__/
- *.pdf 
 
- pics/
+venv_ai_research_assistant
+__pycache__/
+*.pdf 
+
+pics/
