@@ -64,3 +64,4 @@ pics/
 
 .github/
 .env
+.github/workflows/test.yml
