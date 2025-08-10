@@ -53,8 +53,7 @@ Help students get relevant info and be more efficient with their time.
 Python · sentence-transformers · FAISS · transformers · Mistral-7B-Instruct (Hugging Face) · cosine similarity · PyMuPDF · Tesseract OCR · Streamlit · pytest · logging · GitHub Actions · Docker
 ## Project Architecture
 
-`
-## 📌 Project Flow
+```text
 
 User Query
 │
@@ -77,7 +76,8 @@ User Query
        • Relevance
        • Groundedness
        • Retrieval Relevance
-`
+
+```
 
 ## Setup
 TBD
