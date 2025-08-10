@@ -13,3 +13,5 @@ that moved all files up one directory
 - In industry practice, you usually do not put logging inside the tests/ directory — tests should focus on assertions and expected behavior, not producing logs.
 
 - Commited the HF token to .env file somehow, but did not put ".env" in .gitignore and it was commited. There  was a GitHub violation where I was unable to commit. Had to debug and make a new repo called rag_agent_llm_as_a_judge_v2. 
+
+- DO NOT create the github CI yaml file till later in the AI pipeline, I will get notificaitons via email for every push and PR
