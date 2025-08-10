@@ -80,6 +80,8 @@ class Settings:
     # --- Optional features ---
     ENABLE_OCR: bool = False               # Toggle OCR for scanned PDFs/images
 
+    # --- Logging ---
+    LOG_LEVEL: str = "INFO" 
 
 # --------------------------
 # Settings Loader
@@ -116,6 +118,7 @@ def load_settings() -> Settings:
         VECTOR_DIR=os.getenv("VECTOR_DIR", "vectorstore"),
         LOG_FILE=os.getenv("LOG_FILE", "logs/app.log"),
         ENABLE_OCR=_to_bool(os.getenv("ENABLE_OCR"), False),
+        LOG_LEVEL=os.getenv("LOG_LEVEL", "INFO"),
     )
 
 

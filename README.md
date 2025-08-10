@@ -14,9 +14,12 @@ Steps
 2. DONE
 3. DONE
 4. DONE
-5. Config
-       - Update project_map to have `test_config.py`
-6.
+5. DONE
+       - NEED TO DO: Update project_map to have `test_config.py`
+6. Done
+       - Notes: Logging goes into ingestion, utils, embeddings, agent.
+       - Notes: DOES NOT go into config and logger_config
+       - NEED TO DO: Update project_map to have `test_logger_config.py`
 7.
 8.
 9.
