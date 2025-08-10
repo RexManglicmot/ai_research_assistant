@@ -26,9 +26,6 @@ vectorstore/
 *.npy
 *.pkl
 
-# Environment variables
-.env
-
 # Mac OS
 .DS_Store
 
@@ -65,4 +62,5 @@ pics/
 # __pycache__/ — standard Python bytecode cleanup.
 # venv/ — ignores your local virtual environment.
 
-.github/.env
+.github/
+.env
