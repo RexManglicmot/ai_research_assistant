@@ -34,9 +34,8 @@ This project will focus on the 4 generation metrics proposed by[Langchain](https
 
 **Overall Score Calculation:**
 
-\[
-\text{Overall} = 0.35 \cdot \text{Correctness} + 0.25 \cdot \text{Groundedness} + 0.20 \cdot \text{Relevance} + 0.20 \cdot \text{Retrieval Relevance}
-\]
+Overall = 0.35 \cdot \text{Correctness} + 0.25 \cdot \text{Groundedness} + 0.20 \cdot \text{Relevance} + 0.20 \cdot \text{Retrieval Relevance}
+
 
 **Passing Targets:**
 - Correctness ≥ **4.0**
@@ -50,14 +49,14 @@ Help students get relevant info and be more efficient with their time.
 
 ## Tech Stack
 
-Python · sentence-transformers · FAISS · transformers · Mistral-7B-Instruct (Hugging Face) · cosine similarity · PyMuPDF · Tesseract OCR · Streamlit · pytest · logging · GitHub Actions · Docker
+Python · sentence-transformers · FAISS · transformers · Mistral-7B-Instruct (Hugging Face) · cosine similarity · PyMuPDF · Streamlit · pytest · logging · GitHub Actions · Docker
 ## Project Architecture
 
 ```text
 
 User Query
 │
-├── ingestion.py → Load PDFs (optional OCR) → extract text
+├── ingestion.py → Load PDFs → extract text
 │
 ├── utils.py → chunk text + metadata (source, page)
 │
