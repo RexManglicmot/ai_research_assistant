@@ -20,7 +20,7 @@ Steps
        - Notes: Logging goes into ingestion, utils, embeddings, agent.
        - Notes: DOES NOT go into config and logger_config
        - NEED TO DO: Update project_map to have `test_logger_config.py`
-7.
+7. Start here
 8.
 9.
 10.
