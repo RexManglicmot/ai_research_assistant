@@ -3,11 +3,32 @@
 ![status](https://img.shields.io/badge/status-actively--developed-yellowgreen)
 
 
+This project is **currently** being developed and improved with additional features and testing.
+
 TO DO
 - write instructions on how to install
 - Include link to Huggface API Token 
 
-This project is **currently** being developed and improved with additional features and testing.
+Steps
+1. DONE
+2. DONE
+3. DONE
+4. DONE
+5. Config
+       - Update project_map to have `test_config.py`
+6.
+7.
+8.
+9.
+10.
+11.
+12.
+13.
+14.
+15.
+16.
+
+
 
 ## Inspiration
 
