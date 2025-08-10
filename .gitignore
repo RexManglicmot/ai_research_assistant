@@ -1,7 +1,65 @@
-.env # this hols API KEY!
-
-venv_ai_research_assistant
+# Python cache / build
 __pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+venv_ai_research_assistant
+.env/
+venv_ai_research_assistant/
+env/ 
+
+# Logs & debug
+logs/
+*.log
+
+# Local data / artifacts
+data/
+vectorstore/
+*.faiss
+*.npy
+*.pkl
+
+# Environment variables
+.env
+
+# Mac OS
+.DS_Store
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# Test & coverage artifacts
+htmlcov/
+.coverage
+coverage.xml
+.cache/
+pytest_cache/
+
+# Docker
+*.pid
+docker-compose.override.yml
+
+# Temporary files
+tmp/
+temp/
+
+# Folders
+pics/
+
+# Misc
 *.pdf 
 
-pics/
+## Notes
+
+# logs/ — hides all log files generated during runs.
+# data/ & vectorstore/ — ensures your local PDFs and FAISS index aren’t accidentally pushed.
+# .env — keeps Hugging Face token & configs private.
+# *.faiss / *.npy / *.pkl — ignores embedding/index binaries.
+# __pycache__/ — standard Python bytecode cleanup.
+# venv/ — ignores your local virtual environment.

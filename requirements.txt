@@ -1,7 +1,12 @@
+# Core RAG + HF
+langchain
+langchain-community
 transformers
 accelerate
 huggingface_hub
-langchain
-pyMuPDF
-python-dotenv
+sentence-transformers
+
+# Retrieval + PDF + env
 faiss-cpu
+PyMuPDF
+python-dotenv

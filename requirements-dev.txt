@@ -1,3 +1,16 @@
+# Testing & quality
+pytest
+black
+isort
+flake8
+mypy
+coverage
+
+# Lightweight eval helpers
 pandas
 tqdm
 jsonlines
+
+# (Optional) notebooks
+jupyter
+ipykernel

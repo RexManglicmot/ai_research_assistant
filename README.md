@@ -2,6 +2,11 @@
 
 ![status](https://img.shields.io/badge/status-actively--developed-yellowgreen)
 
+
+TO DO
+- write instructions on how to install
+- Include link to Huggface API Token 
+
 This project is **currently** being developed and improved with additional features and testing.
 
 ## Inspiration
@@ -50,7 +55,8 @@ Help students get relevant info and be more efficient with their time.
 
 ## Tech Stack
 
-Python · sentence-transformers · FAISS · transformers · Mistral-7B-Instruct (Hugging Face) · cosine similarity · PyMuPDF · Streamlit · pytest · logging · GitHub Actions · Docker
+Python · sentence-transformers · FAISS · transformers · Mistral-7B-Instruct (Hugging Face) · cosine similarity · PyMuPDF · Streamlit · pytest · logging · GitHub Actions · Docker · Langchain · LLM as a Judge · AI Agents
+
 ## Project Architecture
 
 ```text
