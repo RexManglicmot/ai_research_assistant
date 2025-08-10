@@ -34,8 +34,11 @@ This project will focus on the 4 generation metrics proposed by [Langchain](http
 
 **Overall Score Calculation:**
 
-$Overall = 0.35 \cdot \text{Correctness} + 0.25 \cdot \text{Groundedness} + 0.20 \cdot \text{Relevance} + 0.20 \cdot \text{Retrieval Relevance}$
+**Overall Score Calculation:**
 
+$$
+Overall = 0.35 \cdot \text{Correctness} + 0.25 \cdot \text{Groundedness} + 0.20 \cdot \text{Relevance} + 0.20 \cdot \text{Retrieval Relevance}
+$$
 
 **Passing Targets:**
 - Correctness ≥ **4.0**
