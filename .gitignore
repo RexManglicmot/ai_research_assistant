@@ -65,4 +65,4 @@ pics/
 # __pycache__/ — standard Python bytecode cleanup.
 # venv/ — ignores your local virtual environment.
 
-.github/
+.github/.env
